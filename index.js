@@ -1,8 +1,7 @@
-const { v4 } = require('uuid')
 const { Command } = require('commander')
 const program = new Command()
 
-const { listContacts, getContactById, removeContact, addContact } = require('./contacts')
+const contacts = require('./contacts')
 
 program
   .option('-a, --action <type>', 'choose action')
@@ -16,25 +15,27 @@ program.parse(process.argv)
 const argv = program.opts()
 
 async function invokeAction({ action, id, name, email, phone }) {
-  const allContacts = await listContacts()
   switch (action) {
     case 'list':
+      const allContacts = await contacts.listContacts()
       console.table(allContacts)
       break
 
     case 'get':
-      const contactById = await getContactById(id)
-      console.table(getContactById)
+      const contactById = await contacts.getContactById(id)
+      console.table(contactById)
       break
 
     case 'add':
-      const contactAdd = await addContact(name, email, phone)
-      console.log(contactAdd)
+      const contactAdd = await contacts.addContact(name, email, phone)
+      console.table(contactAdd)
+      console.log(`Contact ${name} was successfully added`)
       break
 
     case 'remove':
-      const delContact = await removeContact(id)
-      console.log(delContact)
+      const delContact = await contacts.removeContact(id)
+      console.table(delContact)
+      console.log(`Contact with ${id} was successfully deleted`)
       break
 
     default:

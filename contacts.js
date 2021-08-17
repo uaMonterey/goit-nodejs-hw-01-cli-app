@@ -9,7 +9,7 @@ const listContacts = async () => {
   try {
     const data = await fs.readFile(contactsPath)
     const contacts = JSON.parse(data)
-    console.log(contacts)
+
     return contacts
   } catch (error) {
     throw error
@@ -59,6 +59,7 @@ const addContact = async (name, email, phone) => {
     }
     contacts.push(newContact)
     await fs.writeFile(contactsPath, JSON.stringify(contacts))
+
     return newContact
   } catch (error) {
     throw error
