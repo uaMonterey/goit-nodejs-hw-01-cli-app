@@ -26,4 +26,4 @@ CLI app can be run in terminal with following commands:
 
 #### node index.js --action remove --id=\<id number>
 
-<a href="https://monosnap.com/file/5ER8u7KCrd0FjSJo8HiI1BRDiFeSKb"" target="_blank"><img src="👨‍💻"  border="0"></a>
+<a href="https://monosnap.com/file/5ER8u7KCrd0FjSJo8HiI1BRDiFeSKb" target="_blank"><img src="👨‍💻"  border="0"></a>
