@@ -22,7 +22,7 @@ const getContactById = async (contactId) => {
     if (!requiredContact) {
       throw new Error(`Contacts with id=${contactId} not found`)
     }
-    console.log(requiredContact)
+
     return requiredContact
   } catch (error) {
     throw error

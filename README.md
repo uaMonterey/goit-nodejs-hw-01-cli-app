@@ -8,13 +8,13 @@ CLI app can be run in terminal with following commands:
 
 #### node index.js --action list
 
-[list 📜](https://monosnap.com/file/YgjjMMRcm4TBbpmz0mBIe8abb2toNE)
+[list 📜](https://monosnap.com/file/YzWgcItKmUBeJAUoodrm4IOAnngCnW)
 
 ### Get contact by id
 
 #### node index.js --action get --id \<id number>
 
-[get id 👻](https://monosnap.com/file/FRYI9Bh3As91BCdECG8Z3ZS8yNHV9p)
+[get id 👻](https://monosnap.com/file/3vEvZwEhD0MOrhvYjqXAtUplCnCk0b)
 
 ### Add contact
 

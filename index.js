@@ -19,23 +19,25 @@ async function invokeAction({ action, id, name, email, phone }) {
     case 'list':
       const allContacts = await contacts.listContacts()
       console.table(allContacts)
+      console.log('Contact list was received successfully')
       break
 
     case 'get':
       const contactById = await contacts.getContactById(id)
       console.table(contactById)
+      console.log(`Contact with id: ${id}, was found successfully`)
       break
 
     case 'add':
       const contactAdd = await contacts.addContact(name, email, phone)
       console.table(contactAdd)
-      console.log(`Contact ${name} was successfully added`)
+      console.log(`Contact ${name}, was successfully added`)
       break
 
     case 'remove':
       const delContact = await contacts.removeContact(id)
       console.table(delContact)
-      console.log(`Contact with ${id} was successfully deleted`)
+      console.log(`Contact with id: ${id}, was successfully deleted`)
       break
 
     default:
