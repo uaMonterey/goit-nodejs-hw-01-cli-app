@@ -1,6 +1,6 @@
 # goit-nodejs-hw-01-cli-app
 
-## How to use
+## How to use 👨🏽‍💻
 
 CLI app can be run in terminal with following commands:
 
@@ -8,22 +8,22 @@ CLI app can be run in terminal with following commands:
 
 #### node index.js --action list
 
-<a href="https://monosnap.com/file/YgjjMMRcm4TBbpmz0mBIe8abb2toNE" target="_blank"><img src="👨‍💻"  border="0"></a>
+[list 📜](https://monosnap.com/file/YgjjMMRcm4TBbpmz0mBIe8abb2toNE)
 
 ### Get contact by id
 
 #### node index.js --action get --id \<id number>
 
-<a href="https://monosnap.com/file/FRYI9Bh3As91BCdECG8Z3ZS8yNHV9p" target="_blank"><img src="👨‍💻"  border="0"></a>
+[get id 👻](https://monosnap.com/file/FRYI9Bh3As91BCdECG8Z3ZS8yNHV9p)
 
 ### Add contact
 
 #### node index.js --action add --name \<name> --email \<email> --phone \<phone>
 
-<a href="https://monosnap.com/file/p5mC1Gi6o5AfcGgUR0l78nqpNPt1I6" target="_blank"><img src="👨‍💻"  border="0"></a>
+[add 🔨](https://monosnap.com/file/p5mC1Gi6o5AfcGgUR0l78nqpNPt1I6)
 
 ### Remove contact
 
 #### node index.js --action remove --id=\<id number>
 
-<a href="https://monosnap.com/file/5ER8u7KCrd0FjSJo8HiI1BRDiFeSKb" target="_blank"><img src="👨‍💻"  border="0"></a>
+[remove 🎯](https://monosnap.com/file/5ER8u7KCrd0FjSJo8HiI1BRDiFeSKb)
